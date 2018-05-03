@@ -1,0 +1,46 @@
+:root {
+    --art-width: 900px;
+    --art-height: calc(var(--art-width) * (1947.5977/1834.1661));            /*taken from viewbox*/
+}
+
+@keyframes example {
+    0%   {fill:red; }
+    25%  {fill:yellow; }
+    50%  {fill:blue; }
+    75%  {fill:green; }
+    100% {fill:red; }
+}
+
+#hide {
+    width: var(--art-width);
+    height: auto;
+    position: absolute;
+    z-index: 3;
+}
+
+.background {
+    background: linear-gradient(to bottom right, #B3E5FC 0%, #81D4FA 35%, #B3E5FC 75%);
+    position: absolute;
+    z-index: 0;
+    width: var(--art-width);
+    height: var(--art-height);
+    filter: saturate(45%);
+}
+
+#back {
+    position: absolute;
+    z-index: 2;
+    width: var(--art-width);
+    height: var(--art-height);
+}
+
+.particle {
+    animation: particles 50s linear infinite;
+    filter: blur(4px) opacity(35%);
+}
+
+@keyframes particles {
+    50% {
+        transform: translateX(40%);
+    }
+}

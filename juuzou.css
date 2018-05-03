@@ -1,0 +1,62 @@
+:root {
+    --art-width: 900px;
+    --art-height: calc(var(--art-width) * (904.79199/971.16406));            /*taken from viewbox*/
+}
+
+#juuzou {
+    width: var(--art-width);
+    height: auto;
+    position: absolute;
+    z-index: 3;
+}
+
+.background {
+    background: linear-gradient(to bottom right, #DCEDC8 0%, #9CCC65 35%, #AED581 65%);
+    position: absolute;
+    z-index: 0;
+    width: var(--art-width);
+    height: var(--art-height);
+    filter: saturate(95%);
+    animation: op 3s linear forwards;
+}
+
+#flower {
+    position: absolute;
+    z-index: 4;
+    width: 119px;
+    height: auto;
+    left: 600px;
+    top: 19px;
+    transform: rotate(45deg);
+}
+
+#flower > path {
+    stroke: #000;
+    stroke-dasharray: 1494px;
+    stroke-dashoffset: 1494px;
+    animation: draw 3s linear forwards;
+    fill-opacity: 0;
+    fill: #CE93D8;
+}
+
+#flower > circle {
+    fill: #FFF59D;
+    stroke: #000;
+    stroke-dasharray: 90px;
+    stroke-dashoffset: 90px;
+    animation: draw 3s linear forwards;
+    fill-opacity: 0;
+}
+
+
+@keyframes draw {
+    90% {
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+}

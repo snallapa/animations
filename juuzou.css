@@ -48,9 +48,78 @@
     fill-opacity: 0;
 }
 
+#flower-background {
+    position: absolute;
+    z-index: 2;
+    width: var(--art-width);
+    height: var(--art-height);
+}
+
+.bflower > path {
+    stroke: #000;
+    stroke-dasharray: 1494px;
+    stroke-dashoffset: 1494px;
+    animation: draw 3s linear forwards;
+    fill-opacity: 0;
+    fill: #CE93D8;
+}
+
+.bflower > circle {
+    fill: #FFF59D;
+    stroke: #000;
+    stroke-dasharray: 90px;
+    stroke-dashoffset: 90px;
+    animation: draw 3s linear forwards;
+    fill-opacity: 0;
+}
+
+.bflower {
+    position: absolute;
+    z-index: 1;
+}
+
+.f1 {
+    width: 170px;
+    height: auto;
+    top: 50px;
+    left: 50px;
+    transform: rotate(40deg);
+}
+
+.f2 {
+    width: 233px;
+    height: auto;
+    top: 594px;
+    left: 24px;
+    transform: rotate(28deg);
+}
+
+.f3 {
+    width: 223px;
+    height: auto;
+    top: 315px;
+    left: 684px;
+    transform: rotate(-86deg);
+}
+
+.f4 {
+    width: 299px;
+    height: auto;
+    top: -5px;
+    left: 562px;
+    transform: rotate(30deg);
+}
+
+.f5 {
+    width: 191px;
+    height: auto;
+    top: 289px;
+    left: 313px;
+    transform: rotate(12deg);
+}
 
 @keyframes draw {
-    90% {
+    80% {
         stroke-dashoffset: 0;
         stroke-width: 2;
         fill-opacity: 0;
@@ -58,5 +127,14 @@
     100% {
         stroke-width: 0;
         fill-opacity: 1;
+    }
+}
+
+@keyframes op {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
     }
 }

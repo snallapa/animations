@@ -1,5 +1,5 @@
 :root {
-    --art-width: 900px;
+    --art-width: 500px;
     --art-height: calc(var(--art-width) * (1947.5977/1834.1661));            /*taken from viewbox*/
 }
 

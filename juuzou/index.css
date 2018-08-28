@@ -1,6 +1,7 @@
 :root {
     --art-width: 900px;
-    --art-height: calc(var(--art-width) * (904.79199/971.16406));            /*taken from viewbox*/
+    --art-height: calc(var(--art-width) * (904.79199/971.16406));       /*taken from viewbox*/
+                     
 }
 
 #juuzou {
@@ -79,18 +80,18 @@
 }
 
 .f1 {
-    width: 170px;
+    width: calc(.188888 * var(--art-width));
     height: auto;
-    top: 50px;
-    left: 50px;
+    top: calc(0.059633848 * var(--art-height));;
+    left: calc(0.02666666667 * var(--art-width));
     transform: rotate(40deg);
 }
 
 .f2 {
-    width: 233px;
+    width: calc(0.2588888889 * var(--art-width));
     height: auto;
-    top: 594px;
-    left: 24px;
+    top: calc(0.7084247686 * var(--art-width));;
+    left: calc(0.05555555 * var(--art-width));;
     transform: rotate(28deg);
 }
 

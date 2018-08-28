@@ -1,0 +1,111 @@
+.path1 {
+    stroke: #000;
+    stroke-dasharray: 19580px;
+    stroke-dashoffset: 19580px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path2 {
+    stroke: #000;
+    stroke-dasharray: 18763px;
+    stroke-dashoffset: 18763px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path3 {
+    stroke: #000;
+    stroke-dasharray: 17017px;
+    stroke-dashoffset: 17017px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path4 {
+    stroke: #000;
+    stroke-dasharray: 15182px;
+    stroke-dashoffset: 15182px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path5 {
+    stroke: #000;
+    stroke-dasharray: 13686px;
+    stroke-dashoffset: 13686px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path6 {
+    stroke: #000;
+    stroke-dasharray: 12120px;
+    stroke-dashoffset: 12120px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path7 {
+    stroke: #000;
+    stroke-dasharray: 10699px;
+    stroke-dashoffset: 10699px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path8 {
+    stroke: #000;
+    stroke-dasharray: 11314px;
+    stroke-dashoffset: 11314px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path9 {
+    stroke: #000;
+    stroke-dasharray: 10469px;
+    stroke-dashoffset: 10469px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path10 {
+    stroke: #000;
+    stroke-dasharray: 5375px;
+    stroke-dashoffset: 5375px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path11 {
+    stroke: #000;
+    stroke-dasharray: 874px;
+    stroke-dashoffset: 874px;
+    animation: fill 8s linear forwards;
+    fill-opacity: 0;
+}
+
+@keyframes draw {
+    0% {
+        stroke-width: 1
+    }
+    80% {
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes fill {
+    80% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}

@@ -1,0 +1,84 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+svg {
+    width: 80%;
+}
+
+.path1 {
+    stroke: #000;
+    stroke-dasharray: 2692px;
+    stroke-dashoffset: 2692px;
+    animation: draw 8s linear forwards, flap 3s ease-in-out 8s infinite;
+    fill-opacity: 0;
+}
+
+.path2 {
+    stroke: #000;
+    stroke-dasharray: 3781px;
+    stroke-dashoffset: 3781px;
+    animation: fill 8s linear forwards, flap 3s ease-in-out 8s infinite;
+    fill-opacity: 0;
+}
+
+.path3 {
+    stroke: #000;
+    stroke-dasharray: 5924px;
+    stroke-dashoffset: 5924px;
+    animation: fill 8s linear forwards, flap 3s ease-in-out 8s infinite;
+    fill-opacity: 0;
+}
+
+.path4 {
+    stroke: #000;
+    stroke-dasharray: 7631px;
+    stroke-dashoffset: 7631px;
+    animation: fill 8s linear forwards, flap 3s ease-in-out 8s infinite;
+    fill-opacity: 0;
+}
+
+.path5 {
+    stroke: #000;
+    stroke-dasharray: 6054px;
+    stroke-dashoffset: 6054px;
+    animation: fill 8s linear forwards, flap 3s ease-in-out 8s infinite;
+    fill-opacity: 0;
+}
+
+@keyframes flap {
+    50% {
+        transform: rotateX(-60deg) translateX(10px) translateY(65px) translateX(-65px);
+        transform-origin: 316px 393px;
+    }
+}
+
+@keyframes fill {
+    80% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes draw {
+    0% {
+        stroke-width: 1
+    }
+    80% {
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+}

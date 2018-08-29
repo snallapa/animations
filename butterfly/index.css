@@ -55,7 +55,7 @@ svg {
 @keyframes flap {
     50% {
         transform: rotateX(-60deg) translateX(10px) translateY(65px) translateX(-65px);
-        transform-origin: 316px 393px;
+        transform-origin: 250px 300px;
     }
 }
 

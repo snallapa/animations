@@ -1,0 +1,102 @@
+
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+svg {
+    width: 40%;
+}
+.path1 {
+    stroke: black;
+    stroke-dasharray: 2293.145263671875;
+    stroke-dashoffset: 2293.145263671875;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path2 {
+    stroke-dasharray: 2990.060546875;
+    stroke-dashoffset: 2990.060546875;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path3 {
+    stroke-dasharray: 4619.7490234375;
+    stroke-dashoffset: 4619.7490234375;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path4 {
+    stroke-dasharray: 4994.43994140625;
+    stroke-dashoffset: 4994.43994140625;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path5 {
+    stroke-dasharray: 5032.2275390625;
+    stroke-dashoffset: 5032.2275390625;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path6 {
+    stroke-dasharray: 5008.92333984375;
+    stroke-dashoffset: 5008.92333984375;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path7 {
+    stroke-dasharray: 4443.62548828125;
+    stroke-dashoffset: 4443.62548828125;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path8 {
+    stroke-dasharray: 4632.0087890625;
+    stroke-dashoffset: 4632.0087890625;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path9 {
+    stroke-dasharray: 2676.97607421875;
+    stroke-dashoffset: 2676.97607421875;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path10 {
+    stroke-dasharray: 1928.1224365234375;
+    stroke-dashoffset: 1928.1224365234375;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path11 {
+    stroke-dasharray: 1590.471435546875;
+    stroke-dashoffset: 1590.471435546875;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+.path12 {
+    stroke-dasharray: 545.7061767578125;
+    stroke-dashoffset: 545.7061767578125;
+    animation: dash 5s linear forwards;
+    fill-opacity: 0
+}
+
+@keyframes dash {
+    0% {
+        stroke-width: 1;
+    }
+    80% {
+        stroke-dashoffset: 0;
+        fill-opacity: 0;
+        stroke-width: 2;
+    }
+    100% {
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+  }

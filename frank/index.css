@@ -1,0 +1,107 @@
+svg {
+    width: 100%;
+}
+
+.path1 {
+    stroke: #000;
+    stroke-dasharray: 4753px;
+    stroke-dashoffset: 4753px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path2 {
+    stroke: #000;
+    stroke-dasharray: 13817px;
+    stroke-dashoffset: 13817px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path3 {
+    stroke: #000;
+    stroke-dasharray: 14565px;
+    stroke-dashoffset: 14565px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path4 {
+    stroke: #000;
+    stroke-dasharray: 15668px;
+    stroke-dashoffset: 15668px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path5 {
+    stroke: #000;
+    stroke-dasharray: 16826px;
+    stroke-dashoffset: 16826px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path6 {
+    stroke: #000;
+    stroke-dasharray: 17786px;
+    stroke-dashoffset: 17786px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path7 {
+    stroke: #000;
+    stroke-dasharray: 16573px;
+    stroke-dashoffset: 16573px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path8 {
+    stroke: #000;
+    stroke-dasharray: 18107px;
+    stroke-dashoffset: 18107px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path9 {
+    stroke: #000;
+    stroke-dasharray: 18145px;
+    stroke-dashoffset: 18145px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+.path10 {
+    stroke: #000;
+    stroke-dasharray: 15887px;
+    stroke-dashoffset: 15887px;
+    animation: draw 8s linear forwards;
+    fill-opacity: 0;
+}
+
+@keyframes draw {
+    0% {
+        stroke-width: 1
+    }
+    80% {
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes fill {
+    80% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}

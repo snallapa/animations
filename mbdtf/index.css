@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+svg {
+  width: 40%;
+}
+
+.sword {
+  animation: stab 2s ease-in forwards;
+  transform-origin: center;
+}
+
+@keyframes stab {
+  0% {
+    transform: translateX(0) translateY(0) rotateZ(0) scale(1);
+  }
+
+  80% {
+    transform: translateX(44px) translateY(-44px) rotateZ(133deg) scale(1.5);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotateZ(0) scale(1);
+  }
+}

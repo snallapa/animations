@@ -10,7 +10,7 @@ body {
 }
 
 .sword {
-  animation: stab 2s ease-in forwards;
+  animation: 2s ease-in 0.7s forwards stab;
   transform-origin: center;
 }
 
